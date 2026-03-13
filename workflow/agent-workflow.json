@@ -1,0 +1,82 @@
+{
+  "workflow": "webmcp",
+  "version": "1.0",
+  "website": "https://aptness.ai",
+  "generated": "2026-03-13T18:15:43.270Z",
+  "nodes": [
+    {
+      "id": "scraper",
+      "type": "data-source",
+      "url": "https://aptness.ai"
+    },
+    {
+      "id": "mcp-generator",
+      "type": "ai-processor"
+    },
+    {
+      "id": "pipeline-0",
+      "type": "automation",
+      "label": "Email Campaign Automation",
+      "trigger": "New Contact in Hubspot",
+      "steps": [
+        "Fetch contact details from Hubspot",
+        "Compose personalized email",
+        "Send email via Gmail",
+        "Log activity in Hubspot"
+      ]
+    },
+    {
+      "id": "pipeline-1",
+      "type": "automation",
+      "label": "Blog Post Generation",
+      "trigger": "Topic Idea",
+      "steps": [
+        "Generate blog post outline using AI",
+        "Write blog post content using AI",
+        "Upload blog post to CMS",
+        "Share blog post on social media"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "scraper",
+      "target": "mcp-generator"
+    },
+    {
+      "source": "mcp-generator",
+      "target": "pipeline-0"
+    },
+    {
+      "source": "mcp-generator",
+      "target": "pipeline-1"
+    }
+  ],
+  "mcpTools": [
+    {
+      "name": "workflow_builder",
+      "description": "Tool to create and configure automation workflows.",
+      "inputSchema": {}
+    },
+    {
+      "name": "connection_manager",
+      "description": "Tool to manage and authenticate application connections.",
+      "inputSchema": {}
+    },
+    {
+      "name": "activity_monitor",
+      "description": "Tool to track and monitor the execution of workflows.",
+      "inputSchema": {}
+    },
+    {
+      "name": "template_library",
+      "description": "Tool to store and reuse workflow templates.",
+      "inputSchema": {}
+    },
+    {
+      "name": "error_reporter",
+      "description": "Tool to report and diagnose workflow errors.",
+      "inputSchema": {}
+    }
+  ]
+}
