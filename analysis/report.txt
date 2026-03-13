@@ -2,46 +2,46 @@ WebMCP Integration Report
 ============================================================
 URL:      https://aptness.ai
 Title:    Aptness - Automate your Workflows seamlessly
-Industry: SaaS, Automation, Artificial Intelligence
+Industry: Software as a Service (SaaS), Artificial Intelligence (AI), Automation
 
 Business Purpose
 ----------------------------------------
-Aptness.ai aims to provide a platform for automating workflows by connecting apps and streamlining operations through an intuitive chat-powered interface.
+Aptness.ai provides a chat-powered automation platform to connect apps, automate tasks, and streamline operations for businesses.
 
 Detected Integrations
 ----------------------------------------
-  • [EMAIL] Gmail Integration: Connect Gmail to automate email sending and triggering workflows. (auth: OAuth 2.0)
-  • [CRM] Hubspot Integration: Integrate Hubspot to manage contacts, automate tasks, and track customer interactions. (auth: API Key)
-  • [FILE STORAGE] Google Drive Integration: Connect Google Drive to automate file uploads, sharing, and management. (auth: OAuth 2.0)
+  • [EMAIL] Gmail Integration: Integrates with Gmail to send and receive emails, trigger workflows based on new emails, and automate email-related tasks. (auth: OAuth 2.0)
+  • [CRM] Hubspot CRM Integration: Integrates with Hubspot CRM to manage contacts, create deals, and automate marketing and sales workflows. (auth: API Key)
+  • [CLOUD STORAGE] Google Drive Integration: Integrates with Google Drive to upload files, manage folders, and automate file-related tasks. (auth: OAuth 2.0)
 
 Automation Pipelines
 ----------------------------------------
-  • Email Campaign Automation (trigger: New Contact in Hubspot)
-    Steps: Fetch contact details from Hubspot → Compose personalized email → Send email via Gmail → Log activity in Hubspot
-  • Blog Post Generation (trigger: Topic Idea)
-    Steps: Generate blog post outline using AI → Write blog post content using AI → Upload blog post to CMS → Share blog post on social media
+  • New Email to CRM Contact (trigger: New email received in Gmail)
+    Steps: Extract sender information from the email → Search for the contact in Hubspot CRM → If the contact exists, update the contact's information → If the contact does not exist, create a new contact in Hubspot CRM
+  • Schedule Event and Send Email (trigger: User command via chat to schedule an event)
+    Steps: Parse event details (date, time, description) from user input → Create event in Google Calendar → Send a confirmation email to the attendees via Gmail
 
 MCP Tools
 ----------------------------------------
-  • workflow_builder: Tool to create and configure automation workflows.
+  • workflow_builder: Tool to visually build and configure automation workflows.
     Params: 
-  • connection_manager: Tool to manage and authenticate application connections.
+  • integration_manager: Tool to manage and configure app integrations.
     Params: 
-  • activity_monitor: Tool to track and monitor the execution of workflows.
+  • event_scheduler: Tool to schedule events and reminders.
     Params: 
-  • template_library: Tool to store and reuse workflow templates.
+  • email_automation_tool: Tool to automate email sending and management.
     Params: 
-  • error_reporter: Tool to report and diagnose workflow errors.
+  • data_analyzer: Tool to analyze automation performance and identify areas for improvement.
     Params: 
 
 AI-Driven Interactions
 ----------------------------------------
-  • Generate Blog Post Outline (model: GPT-3)
-    In: Topic keyword
-    Out: Blog post outline with sections and subheadings
-  • Understand User Intent (model: BERT)
-    In: User's chat command
-    Out: Parsed intent and parameters
-  • Summarize Email Content (model: Transformer)
-    In: Full email content
-    Out: Concise summary of email
+  • Understand user's intent from chat message. (model: Natural Language Understanding (NLU))
+    In: User's chat message describing the desired automation.
+    Out: Identified intent and relevant parameters for the automation workflow.
+  • Generate blog content based on a topic. (model: Large Language Model (LLM))
+    In: Topic and keywords for the blog post.
+    Out: Generated blog content in a structured format (e.g., Markdown).
+  • Create a workflow based on user's natural language description. (model: Workflow Generator)
+    In: User's description of the automation in natural language
+    Out: Structured workflow definition with steps and parameters.
