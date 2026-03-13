@@ -11,7 +11,7 @@ version: "1.0.0",
 
 server.tool(
 "workflow_builder",
-"Tool to create and configure automation workflows.",
+"Tool to visually build and configure automation workflows.",
 {  },
 async (args)=>({
 content:[{type:"text",text:JSON.stringify(args,null,2)}]
@@ -20,8 +20,8 @@ content:[{type:"text",text:JSON.stringify(args,null,2)}]
 
 
 server.tool(
-"connection_manager",
-"Tool to manage and authenticate application connections.",
+"integration_manager",
+"Tool to manage and configure app integrations.",
 {  },
 async (args)=>({
 content:[{type:"text",text:JSON.stringify(args,null,2)}]
@@ -30,8 +30,8 @@ content:[{type:"text",text:JSON.stringify(args,null,2)}]
 
 
 server.tool(
-"activity_monitor",
-"Tool to track and monitor the execution of workflows.",
+"event_scheduler",
+"Tool to schedule events and reminders.",
 {  },
 async (args)=>({
 content:[{type:"text",text:JSON.stringify(args,null,2)}]
@@ -40,8 +40,8 @@ content:[{type:"text",text:JSON.stringify(args,null,2)}]
 
 
 server.tool(
-"template_library",
-"Tool to store and reuse workflow templates.",
+"email_automation_tool",
+"Tool to automate email sending and management.",
 {  },
 async (args)=>({
 content:[{type:"text",text:JSON.stringify(args,null,2)}]
@@ -50,8 +50,8 @@ content:[{type:"text",text:JSON.stringify(args,null,2)}]
 
 
 server.tool(
-"error_reporter",
-"Tool to report and diagnose workflow errors.",
+"data_analyzer",
+"Tool to analyze automation performance and identify areas for improvement.",
 {  },
 async (args)=>({
 content:[{type:"text",text:JSON.stringify(args,null,2)}]
