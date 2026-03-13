@@ -1,0 +1,63 @@
+// Auto-generated MCP Server
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+
+const server = new McpServer({
+name: "Aptness - Automate your Workflows seamlessly",
+version: "1.0.0",
+});
+
+
+server.tool(
+"workflow_builder",
+"Tool to create and configure automation workflows.",
+{  },
+async (args)=>({
+content:[{type:"text",text:JSON.stringify(args,null,2)}]
+})
+);
+
+
+server.tool(
+"connection_manager",
+"Tool to manage and authenticate application connections.",
+{  },
+async (args)=>({
+content:[{type:"text",text:JSON.stringify(args,null,2)}]
+})
+);
+
+
+server.tool(
+"activity_monitor",
+"Tool to track and monitor the execution of workflows.",
+{  },
+async (args)=>({
+content:[{type:"text",text:JSON.stringify(args,null,2)}]
+})
+);
+
+
+server.tool(
+"template_library",
+"Tool to store and reuse workflow templates.",
+{  },
+async (args)=>({
+content:[{type:"text",text:JSON.stringify(args,null,2)}]
+})
+);
+
+
+server.tool(
+"error_reporter",
+"Tool to report and diagnose workflow errors.",
+{  },
+async (args)=>({
+content:[{type:"text",text:JSON.stringify(args,null,2)}]
+})
+);
+
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
