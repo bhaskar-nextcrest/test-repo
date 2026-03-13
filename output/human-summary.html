@@ -17,70 +17,70 @@ code { background:#f1f5f9; padding:1px 5px; border-radius:3px; }
 <body>
 
 <h1>Aptness - Automate your Workflows seamlessly — WebMCP Integration</h1>
-<p class="meta">URL: <a href="https://aptness.ai">https://aptness.ai</a> | Industry: SaaS, Automation, Artificial Intelligence</p>
-<p>Aptness.ai aims to provide a platform for automating workflows by connecting apps and streamlining operations through an intuitive chat-powered interface.</p>
+<p class="meta">URL: <a href="https://aptness.ai">https://aptness.ai</a> | Industry: Software as a Service (SaaS), Artificial Intelligence (AI), Automation</p>
+<p>Aptness.ai provides a chat-powered automation platform to connect apps, automate tasks, and streamline operations for businesses.</p>
 
 <h2>Integrations</h2>
 
 <div class="card">
 <span class="badge">Email</span><strong>Gmail Integration</strong>
-<p>Connect Gmail to automate email sending and triggering workflows.</p>
+<p>Integrates with Gmail to send and receive emails, trigger workflows based on new emails, and automate email-related tasks.</p>
 <strong>Auth:</strong> OAuth 2.0<br/>
-<strong>Endpoints:</strong> <code>smtp.gmail.com</code> <code>imap.gmail.com</code> <code>gmail.googleapis.com</code>
+<strong>Endpoints:</strong> <code>gmail.googleapis.com/v1/users/{userId}/messages/send</code> <code>gmail.googleapis.com/v1/users/{userId}/messages</code>
 </div>
 <div class="card">
-<span class="badge">CRM</span><strong>Hubspot Integration</strong>
-<p>Integrate Hubspot to manage contacts, automate tasks, and track customer interactions.</p>
+<span class="badge">CRM</span><strong>Hubspot CRM Integration</strong>
+<p>Integrates with Hubspot CRM to manage contacts, create deals, and automate marketing and sales workflows.</p>
 <strong>Auth:</strong> API Key<br/>
-<strong>Endpoints:</strong> <code>api.hubapi.com</code>
+<strong>Endpoints:</strong> <code>api.hubapi.com/crm/v3/objects/contacts</code> <code>api.hubapi.com/crm/v3/objects/deals</code>
 </div>
 <div class="card">
-<span class="badge">File Storage</span><strong>Google Drive Integration</strong>
-<p>Connect Google Drive to automate file uploads, sharing, and management.</p>
+<span class="badge">Cloud Storage</span><strong>Google Drive Integration</strong>
+<p>Integrates with Google Drive to upload files, manage folders, and automate file-related tasks.</p>
 <strong>Auth:</strong> OAuth 2.0<br/>
-<strong>Endpoints:</strong> <code>www.googleapis.com/drive/v3/</code>
+<strong>Endpoints:</strong> <code>www.googleapis.com/drive/v3/files</code> <code>www.googleapis.com/drive/v3/files/{fileId}</code>
 </div>
 
 <h2>Automation Pipelines</h2>
 
 <div class="card">
-<strong>Email Campaign Automation</strong> <span class="meta">(trigger: New Contact in Hubspot)</span>
-<ol><li>Fetch contact details from Hubspot</li><li>Compose personalized email</li><li>Send email via Gmail</li><li>Log activity in Hubspot</li></ol>
+<strong>New Email to CRM Contact</strong> <span class="meta">(trigger: New email received in Gmail)</span>
+<ol><li>Extract sender information from the email</li><li>Search for the contact in Hubspot CRM</li><li>If the contact exists, update the contact's information</li><li>If the contact does not exist, create a new contact in Hubspot CRM</li></ol>
 </div>
 <div class="card">
-<strong>Blog Post Generation</strong> <span class="meta">(trigger: Topic Idea)</span>
-<ol><li>Generate blog post outline using AI</li><li>Write blog post content using AI</li><li>Upload blog post to CMS</li><li>Share blog post on social media</li></ol>
+<strong>Schedule Event and Send Email</strong> <span class="meta">(trigger: User command via chat to schedule an event)</span>
+<ol><li>Parse event details (date, time, description) from user input</li><li>Create event in Google Calendar</li><li>Send a confirmation email to the attendees via Gmail</li></ol>
 </div>
 
 <h2>MCP Tools</h2>
 
 <div class="card">
 <code>workflow_builder</code>
-<p>Tool to create and configure automation workflows.</p>
+<p>Tool to visually build and configure automation workflows.</p>
 <strong>Params:</strong>
 
 </div>
 <div class="card">
-<code>connection_manager</code>
-<p>Tool to manage and authenticate application connections.</p>
+<code>integration_manager</code>
+<p>Tool to manage and configure app integrations.</p>
 <strong>Params:</strong>
 
 </div>
 <div class="card">
-<code>activity_monitor</code>
-<p>Tool to track and monitor the execution of workflows.</p>
+<code>event_scheduler</code>
+<p>Tool to schedule events and reminders.</p>
 <strong>Params:</strong>
 
 </div>
 <div class="card">
-<code>template_library</code>
-<p>Tool to store and reuse workflow templates.</p>
+<code>email_automation_tool</code>
+<p>Tool to automate email sending and management.</p>
 <strong>Params:</strong>
 
 </div>
 <div class="card">
-<code>error_reporter</code>
-<p>Tool to report and diagnose workflow errors.</p>
+<code>data_analyzer</code>
+<p>Tool to analyze automation performance and identify areas for improvement.</p>
 <strong>Params:</strong>
 
 </div>
@@ -88,19 +88,19 @@ code { background:#f1f5f9; padding:1px 5px; border-radius:3px; }
 <h2>AI-Driven Interactions</h2>
 
 <div class="card">
-<strong>Generate Blog Post Outline</strong> <span class="tag">GPT-3</span>
-<p><strong>Input:</strong> Topic keyword</p>
-<p><strong>Output:</strong> Blog post outline with sections and subheadings</p>
+<strong>Understand user's intent from chat message.</strong> <span class="tag">Natural Language Understanding (NLU)</span>
+<p><strong>Input:</strong> User's chat message describing the desired automation.</p>
+<p><strong>Output:</strong> Identified intent and relevant parameters for the automation workflow.</p>
 </div>
 <div class="card">
-<strong>Understand User Intent</strong> <span class="tag">BERT</span>
-<p><strong>Input:</strong> User's chat command</p>
-<p><strong>Output:</strong> Parsed intent and parameters</p>
+<strong>Generate blog content based on a topic.</strong> <span class="tag">Large Language Model (LLM)</span>
+<p><strong>Input:</strong> Topic and keywords for the blog post.</p>
+<p><strong>Output:</strong> Generated blog content in a structured format (e.g., Markdown).</p>
 </div>
 <div class="card">
-<strong>Summarize Email Content</strong> <span class="tag">Transformer</span>
-<p><strong>Input:</strong> Full email content</p>
-<p><strong>Output:</strong> Concise summary of email</p>
+<strong>Create a workflow based on user's natural language description.</strong> <span class="tag">Workflow Generator</span>
+<p><strong>Input:</strong> User's description of the automation in natural language</p>
+<p><strong>Output:</strong> Structured workflow definition with steps and parameters.</p>
 </div>
 
 </body>
