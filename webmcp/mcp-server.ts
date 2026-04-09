@@ -1,1 +1,1 @@
-{{steps.8.output.mcpServerTs}}
+{{steps.2.output.data}}	
