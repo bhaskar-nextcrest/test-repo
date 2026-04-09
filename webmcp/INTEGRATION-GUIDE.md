@@ -1,7 +1,1 @@
-# WebMCP Integration Guide — undefined
-**URL:** undefined
-**Industry:** 
-## Business Overview
-
-## MCP Tools
-## Setup Steps
+{{steps.8.output.integrationGuide}}
