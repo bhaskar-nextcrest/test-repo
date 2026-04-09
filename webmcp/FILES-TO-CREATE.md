@@ -1,1 +1,1 @@
-{{steps.8.output.filesToCreateMd}}
+{{steps.2.output.data}}	
