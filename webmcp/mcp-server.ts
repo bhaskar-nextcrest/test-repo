@@ -1,1 +1,1 @@
-// No server code generated
+{{steps.4.output.data.mcpServerTs}}
