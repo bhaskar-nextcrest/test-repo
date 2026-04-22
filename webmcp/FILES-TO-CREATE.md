@@ -1,1 +1,1 @@
- {{steps.4.output.data.filesToCreateMd}}
+{{steps.4.output.data}}
