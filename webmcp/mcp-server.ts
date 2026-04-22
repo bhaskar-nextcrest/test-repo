@@ -1,105 +1,105 @@
 {
   "mcpTools": [
     {
-      "name": "workflow_engine",
-      "description": "Orchestrates automation processes."
+      "name": "workflow_orchestration_engine",
+      "description": "Core engine for defining, executing, and monitoring automated workflows."
     },
     {
-      "name": "chat_parser",
-      "description": "Interprets natural language commands."
+      "name": "ai_model_management_service",
+      "description": "Manages and deploys AI models used within automation workflows."
     },
     {
-      "name": "ai_task_suggester",
-      "description": "Suggests automation based on user input."
+      "name": "api_connector_framework",
+      "description": "Standardized framework for building and managing integrations with various applications."
     },
     {
-      "name": "integration_manager",
-      "description": "Manages connections to external apps."
+      "name": "data_transformation_pipeline",
+      "description": "Processes and transforms data between connected applications within workflows."
     },
     {
-      "name": "task_scheduler",
-      "description": "Schedules automated tasks."
+      "name": "intuitive_workflow_builder_ui",
+      "description": "Graphical user interface for designing and configuring automation workflows."
     }
   ],
   "integrations": [
     {
-      "name": "Slack",
+      "name": "CRM Systems",
       "type": "REST",
-      "description": "Connects to Slack for chat-based commands."
+      "description": "Connects with popular CRM platforms like Salesforce, HubSpot to automate sales and customer service tasks."
     },
     {
-      "name": "Gmail",
-      "type": "OAuth2",
-      "description": "Automates email tasks and notifications."
-    },
-    {
-      "name": "Salesforce",
+      "name": "Communication Platforms",
       "type": "REST",
-      "description": "Integrates with CRM for sales workflows."
+      "description": "Integrates with Slack, Microsoft Teams to send notifications or trigger actions based on messages."
     },
     {
-      "name": "Jira",
+      "name": "Cloud Storage",
       "type": "REST",
-      "description": "Automates project management tasks."
+      "description": "Links to Google Drive, Dropbox, OneDrive for file management and document automation."
     },
     {
-      "name": "Google Drive",
-      "type": "OAuth2",
-      "description": "Manages files and documents in workflows."
+      "name": "HRIS Platforms",
+      "type": "REST",
+      "description": "Connects with HR information systems for employee onboarding, offboarding, and data synchronization."
+    },
+    {
+      "name": "Developer APIs",
+      "type": "REST",
+      "description": "Allows custom integrations with any third-party service exposing a RESTful API."
     }
   ],
   "discoveredEndpoints": [
     {
-      "path": "/api/workflows",
+      "path": "/workflows",
       "method": "GET",
-      "description": "Retrieves user-defined workflows."
+      "description": "Retrieves a list of all configured automation workflows for the user/organization."
     },
     {
-      "path": "/api/tasks",
+      "path": "/workflows",
       "method": "POST",
-      "description": "Creates or triggers a new automated task."
+      "description": "Creates a new automation workflow."
     },
     {
-      "path": "/api/integrations/{id}/connect",
-      "method": "POST",
-      "description": "Initiates connection to an external application."
-    },
-    {
-      "path": "/api/chat/message",
-      "method": "POST",
-      "description": "Sends a message to the chat automation engine."
-    },
-    {
-      "path": "/api/ai/suggestions",
+      "path": "/integrations",
       "method": "GET",
-      "description": "Fetches AI-powered automation suggestions."
+      "description": "Lists all connected application integrations."
+    },
+    {
+      "path": "/triggers",
+      "method": "POST",
+      "description": "Configures a new event trigger for a workflow."
+    },
+    {
+      "path": "/tasks/{id}/status",
+      "method": "PATCH",
+      "description": "Updates the status of a specific workflow task."
     }
   ],
   "setupSteps": [
     {
       "step": 1,
-      "title": "Sign Up and Create Account",
-      "description": "Register for a new Aptness account to get started."
+      "title": "Create Your Aptness Account",
+      "description": "Sign up and set up your organization's profile on the Aptness platform."
     },
     {
       "step": 2,
       "title": "Connect Your Applications",
-      "description": "Link your various business apps like Slack, Gmail, or Salesforce."
+      "description": "Integrate the third-party applications you want to automate (e.g., CRM, Slack, Google Drive)."
     },
     {
       "step": 3,
-      "title": "Define Your First Workflow",
-      "description": "Use the chat interface to describe and set up an automation."
+      "title": "Build Your First Workflow",
+      "description": "Use the intuitive builder to design and configure your initial automation workflow."
     },
     {
       "step": 4,
-      "title": "Test and Refine Automation",
-      "description": "Run your workflow and make adjustments for optimal performance."
+      "title": "Define Triggers and Actions",
+      "description": "Specify what events will start your workflows and what actions they will perform."
     },
     {
       "step": 5,
-      "title": "Invite Team Members",
-      "description": "Collaborate by inviting colleagues to use and manage workflows."
+      "title": "Deploy and Monitor Automations",
+      "description": "Activate your workflows and monitor their execution and performance through the dashboard."
     }
   ]
 }
