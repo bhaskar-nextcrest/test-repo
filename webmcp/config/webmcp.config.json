@@ -1,1 +1,81 @@
-{{steps.6.output.data.configJson}}
+{
+  "site": {
+    "url": "https://aptness.ai/"
+  },
+  "mcpTools": [
+    {
+      "name": "ai_chat_interface",
+      "description": "Engage with the chat-powered AI for automation setup."
+    },
+    {
+      "name": "workflow_builder",
+      "description": "Design and manage automated workflows and tasks."
+    },
+    {
+      "name": "application_connector",
+      "description": "Connect various external applications and services."
+    },
+    {
+      "name": "task_automation_engine",
+      "description": "Execute and monitor automated tasks and processes."
+    },
+    {
+      "name": "data_mapper",
+      "description": "Map and transform data between connected applications."
+    }
+  ],
+  "integrations": [
+    {
+      "name": "crm_systems",
+      "type": "REST",
+      "description": "Connect to popular Customer Relationship Management platforms."
+    },
+    {
+      "name": "marketing_automation",
+      "type": "REST",
+      "description": "Integrate with marketing tools for campaign management."
+    },
+    {
+      "name": "communication_platforms",
+      "type": "REST",
+      "description": "Link with chat and email services for notifications and actions."
+    },
+    {
+      "name": "cloud_storage",
+      "type": "REST",
+      "description": "Access and manage files in various cloud storage solutions."
+    },
+    {
+      "name": "project_management",
+      "type": "REST",
+      "description": "Automate tasks within project management software."
+    }
+  ],
+  "discoveredEndpoints": [
+    {
+      "path": "/api/v1/workflows",
+      "method": "GET",
+      "description": "Retrieve a list of defined automation workflows."
+    },
+    {
+      "path": "/api/v1/integrations",
+      "method": "GET",
+      "description": "List currently connected applications and services."
+    },
+    {
+      "path": "/api/v1/tasks",
+      "method": "GET",
+      "description": "View details of individual automated tasks."
+    },
+    {
+      "path": "/api/v1/chat/messages",
+      "method": "POST",
+      "description": "Send a message to the AI for automation generation."
+    },
+    {
+      "path": "/api/v1/automation-runs",
+      "method": "GET",
+      "description": "Monitor the execution status and history of automations."
+    }
+  ]
+}
