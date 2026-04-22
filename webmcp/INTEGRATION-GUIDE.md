@@ -1,1 +1,1 @@
-{{steps.4.output.data.integrationGuide}}
+{{steps.4.output.data}}
