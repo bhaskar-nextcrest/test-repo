@@ -1,8 +1,1 @@
-{
-  "generatedAt": "2026-04-22T05:06:28.440Z",
-  "site": {},
-  "discoveredEndpoints": [],
-  "mcpTools": [],
-  "integrations": [],
-  "automationPipelines": []
-}
+{{steps.4.output.data.configJson}}
