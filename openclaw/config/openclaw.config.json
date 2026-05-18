@@ -1,0 +1,162 @@
+{
+  "openclaw_version": "1.0",
+  "generated": "2026-05-18T06:17:42.745Z",
+  "usedFallback": false,
+  "site": {
+    "url": "https://aptness.ai/",
+    "title": "Aptness - Automate your Workflows seamlessly",
+    "description": "Connect apps, automate tasks, and streamline your operations with Aptness's intuitive chat-powered automation platform.",
+    "industry": "Workflow Automation, Artificial Intelligence, Software as a Service (SaaS)",
+    "businessPurpose": "Aptness is an AI-powered automation platform that enables users to connect various applications, automate tasks, and streamline operations. It offers a marketplace for pre-built automation packages, tools to design custom AI agents, and a rapid agent feature for instant task execution. Additionally, it fosters a community where users can share their self-built automation systems, earn credits, and collectively reduce the cost of automation."
+  },
+  "skills": [
+    {
+      "name": "find_and_learn_about_automation_packages",
+      "title": "Find and Learn About Automation Packages",
+      "description": "A user wants to understand what automation packages are available on Aptness.ai for a specific use case or industry without navigating manually.",
+      "actions": [
+        "User asks the bot to 'Show me automation packages for marketing'.",
+        "Bot navigates to the Marketplace section and describes relevant examples."
+      ],
+      "ai_help": "The AI can quickly direct the user to the relevant section and summarize package types, saving manual scrolling and reading."
+    },
+    {
+      "name": "initiate_a_rapid_agent_task",
+      "title": "Initiate a Rapid Agent Task",
+      "description": "A user has a simple task they want to automate instantly using Aptness's Rapid Agent feature, and wants to start the process.",
+      "actions": [
+        "User tells the bot 'I want to generate a weekly report from my Google Sheet using the Rapid Agent'.",
+        "Bot fills the rapid agent input field with the user's task description."
+      ],
+      "ai_help": "The AI streamlines the initial input for the Rapid Agent, allowing the user to express their automation need conversationally."
+    },
+    {
+      "name": "discover_integrated_applications",
+      "title": "Discover Integrated Applications",
+      "description": "A user needs to know which applications Aptness can connect with to determine if it fits their existing tech stack.",
+      "actions": [
+        "User asks the bot 'What apps can Aptness connect to?'",
+        "Bot lists the integrated applications displayed on the homepage."
+      ],
+      "ai_help": "The AI quickly extracts and presents the list of supported applications, saving the user from having to visually scan the page."
+    },
+    {
+      "name": "understand_how_aptness_works",
+      "title": "Understand How Aptness Works",
+      "description": "A new user wants a quick overview of the Aptness platform's core steps from setup to running automations.",
+      "actions": [
+        "User asks the bot 'How does Aptness work?'",
+        "Bot navigates to the 'How it works' section and provides a summary of the 3 steps."
+      ],
+      "ai_help": "The AI provides an immediate, concise explanation of the platform's mechanics, guiding the user to essential information efficiently."
+    }
+  ],
+  "botCapabilities": [
+    {
+      "name": "marketplace_content_monitoring",
+      "title": "Marketplace Content Monitoring",
+      "description": "An autonomous bot periodically monitors the Aptness.ai homepage for updates or new prominent packages mentioned in the 'Marketplace' section.",
+      "data_retrieval": [
+        "Package names and descriptions from the 'Marketplace' section",
+        "Any new calls to action related to marketplace packages"
+      ],
+      "automations": [
+        "Navigate to the 'Marketplace' section",
+        "Extract text content related to packages",
+        "Log changes or new package mentions to an external database"
+      ],
+      "api_interactions": [
+        "None (primarily UI interaction for public content)"
+      ]
+    },
+    {
+      "name": "integrated_apps_list_compilation",
+      "title": "Integrated Apps List Compilation",
+      "description": "A bot compiles a current list of all applications Aptness integrates with directly from the website's 'Connect your apps' section.",
+      "data_retrieval": [
+        "Names of integrated applications (e.g., Gmail, Sheets, GitHub)"
+      ],
+      "automations": [
+        "Navigate to the 'Connect your apps' section",
+        "Extract all listed application names",
+        "Format the list for reporting or storage"
+      ],
+      "api_interactions": [
+        "None (primarily UI interaction for public content)"
+      ]
+    },
+    {
+      "name": "lead_generation_flow_initiation",
+      "title": "Lead Generation Flow Initiation",
+      "description": "An autonomous bot initiates the 'Get started free' flow to simulate a new user signup and test the initial user journey.",
+      "data_retrieval": [
+        "Status of the 'Get started free' button or link"
+      ],
+      "automations": [
+        "Click the 'Get started free' button in the header",
+        "Monitor the subsequent page load or URL change"
+      ],
+      "api_interactions": [
+        "None (primarily UI interaction for public content)"
+      ]
+    },
+    {
+      "name": "promotional_content_discovery",
+      "title": "Promotional Content Discovery",
+      "description": "A bot scans the Aptness.ai landing page to identify and log key promotional messages, new features highlighted, or community benefits.",
+      "data_retrieval": [
+        "Headings and paragraphs in sections like 'AI agents that get your work done', 'Share your magic', 'Everything in the box'",
+        "Calls to action text"
+      ],
+      "automations": [
+        "Navigate through various sections of the homepage",
+        "Extract and categorize prominent text elements",
+        "Store discovered content for analysis"
+      ],
+      "api_interactions": [
+        "None (primarily UI interaction for public content)"
+      ]
+    }
+  ],
+  "widget": {
+    "position": "bottom-right",
+    "primaryColor": "#7c3aed",
+    "title": "Aptness - Automate your Workflows seamlessly Assistant"
+  },
+  "techStack": [
+    "Next.js (frontend framework)",
+    "React (inferred from Next.js)",
+    "Cloud-based infrastructure (for scalability and AI agent execution)",
+    "API integration framework",
+    "Database for storing user data, agent configurations, and automation run logs",
+    "AI/ML models for rapid agent and custom agent intelligence",
+    "Payment/credit system for monetization features"
+  ],
+  "botFriendliness": [
+    {
+      "item": "Clear HTML Structure and Semantic Elements",
+      "currentStatus": "good",
+      "recommendation": "The website uses standard HTML5 elements and a reasonably clear structure, making it straightforward for bots to parse content."
+    },
+    {
+      "item": "Stable Element IDs/Classes for Key Interactions",
+      "currentStatus": "needs-work",
+      "recommendation": "Many interactive elements rely on generic class names or text content for identification, which can be brittle. Adding unique and stable IDs to critical elements (e.g., input fields, buttons for main actions) would improve bot reliability."
+    },
+    {
+      "item": "Robots.txt Configuration",
+      "currentStatus": "good",
+      "recommendation": "Aptness.ai has a robots.txt file that allows crawling (`User-agent: *\nAllow: /`), indicating bot-friendly access."
+    },
+    {
+      "item": "Accessibility Features (ARIA attributes, semantic tags)",
+      "currentStatus": "good",
+      "recommendation": "While not exhaustively checked, the use of semantic HTML and clear text elements generally aids accessibility, which is beneficial for bots that interpret page structure."
+    },
+    {
+      "item": "API Availability for Core Business Logic",
+      "currentStatus": "missing",
+      "recommendation": "The landing page describes API integrations for *external* services, but does not expose public APIs for managing Aptness accounts, creating agents, or interacting with the marketplace programmatically from *outside* the UI. This limits deeper autonomous bot use cases without UI automation or specific platform integrations."
+    }
+  ]
+}
