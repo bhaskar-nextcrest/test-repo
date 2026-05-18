@@ -3,29 +3,29 @@
 URL: https://aptness.ai/
 
 ## MCP Tools
-1. **ai_chat_interface** — Engage with the chat-powered AI for automation setup.
-2. **workflow_builder** — Design and manage automated workflows and tasks.
-3. **application_connector** — Connect various external applications and services.
-4. **task_automation_engine** — Execute and monitor automated tasks and processes.
-5. **data_mapper** — Map and transform data between connected applications.
+1. **ai_model_hosting** — Platforms for deploying and managing machine learning models.
+2. **workflow_orchestration_engine** — Core system for defining, executing, and monitoring automated workflows.
+3. **cloud_compute_platform** — Underlying infrastructure service for hosting the SaaS application.
+4. **api_management_platform** — Tooling for securing, scaling, and managing internal and external APIs.
+5. **data_storage_solution** — Database and storage services for persistent data, configurations, and logs.
 
 ## Integrations
-1. **crm_systems** (REST): Connect to popular Customer Relationship Management platforms.
-2. **marketing_automation** (REST): Integrate with marketing tools for campaign management.
-3. **communication_platforms** (REST): Link with chat and email services for notifications and actions.
-4. **cloud_storage** (REST): Access and manage files in various cloud storage solutions.
-5. **project_management** (REST): Automate tasks within project management software.
+1. **crm_systems** (REST): Integration with Customer Relationship Management platforms like Salesforce or HubSpot.
+2. **erp_platforms** (REST): Connectivity with Enterprise Resource Planning systems such as SAP or Oracle.
+3. **communication_platforms** (REST): Links with team collaboration tools like Slack or Microsoft Teams for notifications.
+4. **cloud_storage_providers** (REST): Integration with services such as Google Drive, Dropbox, or OneDrive.
+5. **marketing_automation_platforms** (REST): Connections to tools like Mailchimp or HubSpot Marketing for campaign automation.
 
 ## Endpoints
-- `GET /api/v1/workflows` — Retrieve a list of defined automation workflows.
-- `GET /api/v1/integrations` — List currently connected applications and services.
-- `GET /api/v1/tasks` — View details of individual automated tasks.
-- `POST /api/v1/chat/messages` — Send a message to the AI for automation generation.
-- `GET /api/v1/automation-runs` — Monitor the execution status and history of automations.
+- `GET /workflows` — Retrieve a list of all defined automation workflows.
+- `GET /connections` — Fetch details about connected third-party applications and services.
+- `GET /tasks` — Get a list of recently executed or pending automation tasks.
+- `GET /ai/predictions` — Retrieve results from AI prediction models or services.
+- `GET /settings` — Access user or platform configuration settings.
 
 ## Setup
-1. **Connect Your Applications**: Link the apps you want to automate with Aptness.ai.
-2. **Describe Your Automation Goal**: Use the chat interface to tell the AI what you want to automate.
-3. **Review AI-Generated Workflow**: Check the proposed automation flow and make any necessary adjustments.
-4. **Configure Task Details**: Set specific parameters and data mappings for each step in the workflow.
-5. **Test and Activate Automation**: Run a test to ensure it works correctly, then activate your new workflow.
+1. **Account Creation**: Registering a new user account on the Aptness platform.
+2. **Application Connection**: Linking necessary third-party applications and services to Aptness.
+3. **Workflow Design**: Visually or programmatically building new automation workflows.
+4. **Workflow Activation**: Deploying and enabling the created automation workflows for execution.
+5. **Performance Monitoring**: Tracking the execution and efficiency of active workflows and automations.
