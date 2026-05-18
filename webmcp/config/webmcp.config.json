@@ -4,78 +4,78 @@
   },
   "mcpTools": [
     {
-      "name": "ai_chat_interface",
-      "description": "Engage with the chat-powered AI for automation setup."
+      "name": "ai_model_hosting",
+      "description": "Platforms for deploying and managing machine learning models."
     },
     {
-      "name": "workflow_builder",
-      "description": "Design and manage automated workflows and tasks."
+      "name": "workflow_orchestration_engine",
+      "description": "Core system for defining, executing, and monitoring automated workflows."
     },
     {
-      "name": "application_connector",
-      "description": "Connect various external applications and services."
+      "name": "cloud_compute_platform",
+      "description": "Underlying infrastructure service for hosting the SaaS application."
     },
     {
-      "name": "task_automation_engine",
-      "description": "Execute and monitor automated tasks and processes."
+      "name": "api_management_platform",
+      "description": "Tooling for securing, scaling, and managing internal and external APIs."
     },
     {
-      "name": "data_mapper",
-      "description": "Map and transform data between connected applications."
+      "name": "data_storage_solution",
+      "description": "Database and storage services for persistent data, configurations, and logs."
     }
   ],
   "integrations": [
     {
       "name": "crm_systems",
       "type": "REST",
-      "description": "Connect to popular Customer Relationship Management platforms."
+      "description": "Integration with Customer Relationship Management platforms like Salesforce or HubSpot."
     },
     {
-      "name": "marketing_automation",
+      "name": "erp_platforms",
       "type": "REST",
-      "description": "Integrate with marketing tools for campaign management."
+      "description": "Connectivity with Enterprise Resource Planning systems such as SAP or Oracle."
     },
     {
       "name": "communication_platforms",
       "type": "REST",
-      "description": "Link with chat and email services for notifications and actions."
+      "description": "Links with team collaboration tools like Slack or Microsoft Teams for notifications."
     },
     {
-      "name": "cloud_storage",
+      "name": "cloud_storage_providers",
       "type": "REST",
-      "description": "Access and manage files in various cloud storage solutions."
+      "description": "Integration with services such as Google Drive, Dropbox, or OneDrive."
     },
     {
-      "name": "project_management",
+      "name": "marketing_automation_platforms",
       "type": "REST",
-      "description": "Automate tasks within project management software."
+      "description": "Connections to tools like Mailchimp or HubSpot Marketing for campaign automation."
     }
   ],
   "discoveredEndpoints": [
     {
-      "path": "/api/v1/workflows",
+      "path": "/workflows",
       "method": "GET",
-      "description": "Retrieve a list of defined automation workflows."
+      "description": "Retrieve a list of all defined automation workflows."
     },
     {
-      "path": "/api/v1/integrations",
+      "path": "/connections",
       "method": "GET",
-      "description": "List currently connected applications and services."
+      "description": "Fetch details about connected third-party applications and services."
     },
     {
-      "path": "/api/v1/tasks",
+      "path": "/tasks",
       "method": "GET",
-      "description": "View details of individual automated tasks."
+      "description": "Get a list of recently executed or pending automation tasks."
     },
     {
-      "path": "/api/v1/chat/messages",
-      "method": "POST",
-      "description": "Send a message to the AI for automation generation."
+      "path": "/ai/predictions",
+      "method": "GET",
+      "description": "Retrieve results from AI prediction models or services."
     },
     {
-      "path": "/api/v1/automation-runs",
+      "path": "/settings",
       "method": "GET",
-      "description": "Monitor the execution status and history of automations."
+      "description": "Access user or platform configuration settings."
     }
   ]
 }
