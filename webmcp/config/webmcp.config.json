@@ -1,0 +1,81 @@
+{
+  "site": {
+    "url": "https://aptness.ai/"
+  },
+  "mcpTools": [
+    {
+      "name": "ai_agent_builder",
+      "description": "For creating and managing custom AI agents."
+    },
+    {
+      "name": "workflow_designer",
+      "description": "For visually designing and automating workflows."
+    },
+    {
+      "name": "natural_language_interface",
+      "description": "Handles chat-powered interactions and understanding."
+    },
+    {
+      "name": "application_connector",
+      "description": "Manages connections to various external applications."
+    },
+    {
+      "name": "data_transformation_engine",
+      "description": "Processes and transforms data for AI and workflows."
+    }
+  ],
+  "integrations": [
+    {
+      "name": "CRM Systems",
+      "type": "REST",
+      "description": "Connects to customer relationship management platforms."
+    },
+    {
+      "name": "Productivity Suites",
+      "type": "REST",
+      "description": "Integrates with office and collaboration tools."
+    },
+    {
+      "name": "Communication Platforms",
+      "type": "REST",
+      "description": "Links with messaging and team collaboration apps."
+    },
+    {
+      "name": "Database APIs",
+      "type": "REST",
+      "description": "Connects to various types of databases."
+    },
+    {
+      "name": "Custom REST APIs",
+      "type": "REST",
+      "description": "Allows integration with any RESTful service."
+    }
+  ],
+  "discoveredEndpoints": [
+    {
+      "path": "/agents",
+      "method": "GET",
+      "description": "Retrieve a list of AI agents."
+    },
+    {
+      "path": "/workflows",
+      "method": "POST",
+      "description": "Create a new automation workflow."
+    },
+    {
+      "path": "/integrations",
+      "method": "GET",
+      "description": "List all configured application integrations."
+    },
+    {
+      "path": "/chat",
+      "method": "POST",
+      "description": "Send messages to AI agents for interaction."
+    },
+    {
+      "path": "/data_sources",
+      "method": "PUT",
+      "description": "Update details of a connected data source."
+    }
+  ]
+}
